@@ -10,7 +10,7 @@ AT_BASE   = "appg8bFOpfdO8JLBD"
 AT_TABLE  = "tblDQLz0iQZMzDu4u"
 SITE_URL  = "https://yellow-charlene-21.tiiny.site"
 PHONE     = "02122775943"
-ADMIN_ID  = 1657275993
+ADMIN_ID  = 63050806
 
 STEPS = [
     "عقد قرارداد",
