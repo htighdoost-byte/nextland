@@ -8,7 +8,7 @@ BOT_TOKEN = "8502388053:AAEexQZWzubls5Qj1cWx_ebfqpish5ZWhtY"
 AT_TOKEN  = os.environ.get("AT_TOKEN", "pat2i5YZB4Xf1NaWa.25cc2d827cfcc22815f9229f9d12067c859216bf6b7dc4f2d29c08b9948946f9")
 AT_BASE   = "appg8bFOpfdO8JLBD"
 AT_TABLE  = "tblDQLz0iQZMzDu4u"
-SITE_URL  = "https://nextland.tiiny.site"
+SITE_URL  = "https://yellow-charlene-21.tiiny.site"
 PHONE     = "02122775943"
 ADMIN_ID  = 1657275993
 
