@@ -8,7 +8,7 @@ BOT_TOKEN = "8502388053:AAEexQZWzubls5Qj1cWx_ebfqpish5ZWhtY"
 AT_TOKEN  = os.environ.get("AT_TOKEN", "pat2i5YZB4Xf1NaWa.25cc2d827cfcc22815f9229f9d12067c859216bf6b7dc4f2d29c08b9948946f9")
 AT_BASE   = "appg8bFOpfdO8JLBD"
 AT_TABLE  = "tblDQLz0iQZMzDu4u"
-SITE_URL  = "https://yellow-charlene-21.tiiny.site"
+SITE_URL  = "https://nextland.tiiny.site"
 PHONE     = "02122775943"
 ADMIN_ID  = 63050806
 
@@ -168,7 +168,18 @@ def handle(msg):
         send(cid, f"آیدی: <code>{uid}</code>")
         return
 
+    MENU = {"keyboard":[[{"text":"📋 پیگیری پرونده"},{"text":"❓ سوالات متداول"}]],"resize_keyboard":True,"persistent":True}
+
     if not is_admin:
+        if txt == "/start":
+            send(cid, "سلام به Nextland خوش اومدی! 👋\n\nیکی از گزینه‌های زیر رو انتخاب کن:", MENU)
+            return
+        if txt == "📋 پیگیری پرونده":
+            send(cid, "کد پرونده‌ات رو بفرست.\nمثال: NL001", MENU)
+            return
+        if txt == "❓ سوالات متداول":
+            send(cid, "سوالات متداول کدوم مرحله رو میخوای؟\nکد پرونده‌ات رو بفرست تا سوالات مرحله فعالت رو ببینی.\nمثال: NL001", MENU)
+            return
         if txt.upper().startswith("NL"):
             c = get_by_id(txt.upper())
             if c:
@@ -190,7 +201,7 @@ def handle(msg):
             else:
                 send(cid, "کد اشتباهه. مثال: NL001")
         else:
-            send(cid, f"سلام! کد پرونده‌ات رو بفرست.\nمثال: NL001\n\nبرای تماس: {PHONE}")
+            send(cid, f"سلام! کد پرونده‌ات رو بفرست.\nمثال: NL001\n\nبرای تماس: {PHONE}", MENU)
         return
 
     if txt == "/start":
